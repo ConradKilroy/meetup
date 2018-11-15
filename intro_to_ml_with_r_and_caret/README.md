@@ -11,3 +11,4 @@ Additionally, the following are required to use the files for the Meetup:
 * The [e1071](https://cran.r-project.org/web/packages/e1071/index.html), [caret](https://cran.r-project.org/web/packages/caret/index.html), [doSNOW](https://cran.r-project.org/web/packages/doSNOW/index.html), [ipred](https://cran.r-project.org/web/packages/ipred/index.html), and [xgboost](https://cran.r-project.org/web/packages/xgboost/index.html) packages.
 
 
+Video: https://www.youtube.com/watch?v=z8PRU46I3NY by DataScienceDojo
