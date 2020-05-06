@@ -75,11 +75,16 @@ str(train)
 # to impute missing values for the Age feature.
 
 # First, transform all feature to dummy variables.
+#dummyVars from Carets explained:
+#https://amunategui.github.io/dummyVar-Walkthrough/
+#Python its called "One Hot Encoding"
 dummy.vars <- dummyVars(~ ., data = train[, -1])
 train.dummy <- predict(dummy.vars, train[, -1])
 View(train.dummy)
+#Pivoted binary tables added.
 
 # Now, impute!
+#bagImpute works on numerical data only
 pre.process <- preProcess(train.dummy, method = "bagImpute")
 imputed.data <- predict(pre.process, train.dummy)
 View(imputed.data)
